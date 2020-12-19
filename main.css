@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(170deg,#65b5f6,#8587fd);
+    color: white;
+    font-family: 'Abel', sans-serif;
+    min-height: 100vh;
+}
+header{
+    font-size: 1.5rem;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form input,form button{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+form label{
+    font-size: 2rem;
+}
+form input{
+    transition: all 0.3s ease;
+}
+form input:hover{
+    background-color: #e4f4fc;
+}
+form button{
+    color:#8587fd;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background: #8587fd;
+    color: white;
+}
+.encrypt, .decode{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.decode{
+    margin-top: 2rem;
+}
+.txt-result{
+    font-size: 2rem;
+}

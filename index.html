@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <title>Caesar Cipher</title>
+</head>
+<body>
+    <header>
+        <h1>Caesar Cipher</h1>
+    </header>
+    <form >
+        <div class="encrypt">
+            <label for="encrytedMessage">Encrypted Message</label>
+            <input class="txt-msg" type="text"id="encryptedMessage" placeholder="Encrypted Message">
+            <input class="txt-shift" type="text" id="encrypt-shift" placeholder="Shift key">
+            <button class="btn" type="submit" id="encrypt" onclick="checkEncryption();">Encrypt</button>
+            <h1>Encrypted Message</h1>
+            <p class="txt-result" id="messageEncrypted"></p>
+        </div>
+
+        <div class="decode">
+            <label for="normalMessage">Text To Be Decoded Message</label>
+            <input class="txt-msg" type="text" id="normalMessage" placeholder="Message to Decode">
+            <input class="txt-shift" type="text" id="decode-shift" placeholder="Shift key">
+            <button class="btn" type="submit" id="decode" onclick="checkDecode();">Decode</button>
+            <h1>Decoded Message</h1>
+            <p class="txt-result" id="messageDecoded"></p>
+        </div>
+    </form>
+</body>
+<script src="app.js"></script>
+</html>
